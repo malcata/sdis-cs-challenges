@@ -18,13 +18,17 @@ Without homebrew follow this link (everywhere else)
 
 ## Setup the environment
 
-1. Build Jupyter Notebook image (only the first-time).
+
+1. Launch docker
+
+
+2. Build Jupyter Notebook image (only the first-time).
 
 ```bash
 docker compose build
 ```
 
-2. Run Jupyter Notebook
+3. Run Jupyter Notebook
 
 To launch the container running Jupyter Notebook.
 
