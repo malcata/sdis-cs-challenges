@@ -5,6 +5,9 @@ jupyter
 typing      # type hints
 mypy        # static type checker
 
+## bash terminal
+#bash_kernel
+
 ## Data manipulation
 #numpy        # Array computing
 #pandas       # Data structures for data analysis, time series, and statistics

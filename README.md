@@ -4,48 +4,34 @@ Coding challenges for St Dominics 26/27
 
 ## Installation
 
-Install the following software: brew, docker, Makefile
+Install the following software: docker
 
 
-1. Install brew
-
+With homebrew (on Mac)
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install docker-desktop
 ```
 
+Without homebrew follow this link (everywhere else)
+    https://docs.docker.com/get-started/get-docker/
 
-2. Install the others
 
-```bash
-brew install docker-desktop make
-```
+## Setup the environment
 
-## Solve Challenges
-
-1. Go to the challenges repo clone
-
-To download new challenges.
+1. Build Jupyter Notebook image (only the first-time).
 
 ```bash
-git pull
+docker compose build
 ```
 
-2. Build Jupyter Notebook image (only the first-time).
-
-The Makefile is just to make easy to build the container image.
-
-```bash
-make build
-```
-
-3. Run Jupyter Notebook
+2. Run Jupyter Notebook
 
 To launch the container running Jupyter Notebook.
 
 ```bash
-make run
+docker compose up
 ```
 
+## Solve Coding Challenge
 
-
-
+Pick the challenge and solve it

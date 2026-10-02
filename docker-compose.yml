@@ -1,0 +1,15 @@
+services:
+  ds-jupyter:
+    image: malcata/ds-jupyter
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ds-jupyter
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      # One could have environment variable $FOLDER, defaults to this repo
+      - ${FOLDER:-.}:/opt/ds-jupyter
+    working_dir: /opt/ds-jupyter
+    stdin_open: true
+    tty: true
