@@ -309,3 +309,5 @@ http-client.private.env.json
 # Jupyter Notebook
 .Trash-*
 .ipynb_checkpoints
+Untitled.ipynb
+
